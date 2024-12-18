@@ -1,0 +1,21 @@
+{
+	"id": "85de87c8-dd5d-47bd-8bec-fa0f872aee10",
+	"values": [
+		{
+			"key": "app_url",
+			"value": "https://api.openweathermap.org/data/2.5",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "api_key",
+			"value": "f9bb06efd1ac16a54ba19cfe4db39e41",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2024-12-18T13:21:34.511Z",
+	"_postman_exported_using": "Postman/11.23.1"
+}

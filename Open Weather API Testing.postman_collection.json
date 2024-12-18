@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "049a2d3c-8639-44fe-b8ad-64b8cdb20fc2",
+		"name": "Open Weather API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37454771"
+	},
+	"item": [
+		{
+			"name": "city & state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}/weather?q={{city}},{{state}}&appid={{api_key}}",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{city}},{{state}}"
+						},
+						{
+							"key": "appid",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "city,state & country code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}/weather?q={{city}},{{state}},{{country_code}}&appid={{api_key}}",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{city}},{{state}},{{country_code}}"
+						},
+						{
+							"key": "appid",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "longitude & latitude",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}/weather?lat={{lat}}&lon={{lon}}&appid={{api_key}}",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "{{lat}}"
+						},
+						{
+							"key": "lon",
+							"value": "{{lon}}"
+						},
+						{
+							"key": "appid",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "city",
+			"value": "Bengaluru",
+			"type": "string"
+		},
+		{
+			"key": "state",
+			"value": "Karnataka",
+			"type": "string"
+		},
+		{
+			"key": "lon",
+			"value": "77.60",
+			"type": "string"
+		},
+		{
+			"key": "lat",
+			"value": "12.97",
+			"type": "string"
+		},
+		{
+			"key": "country_code",
+			"value": "91",
+			"type": "string"
+		}
+	]
+}
